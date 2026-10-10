@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Animaciones en CSS</title>
+</head>
+<body>
+
+    <center>
+        <h1>Animaciones en CSS</h1>
+        <h2><a href="index.html">Regresar</a></h2>
+        <hr>
+    </center>
+
+    <h2>1. Introduccion teorica</h2>
+    <p>
+        Las animaciones en CSS permiten cambiar la apariencia
+        de los elementos de una pagina web con el paso del tiempo.
+        Se utiliza la propiedad animation y la regla @keyframes
+        para definir los cambios que tendra un elemento.
+    </p>
+
+    <h2>2. Ejemplos de animaciones en CSS</h2>
+
+    <style>
+        @keyframes mover {
+            from { transform: translateX(0); }
+            to { transform: translateX(100px); }
+        }
+
+        @keyframes cambiarColor {
+            from { background-color: red; }
+            to { background-color: yellow; }
+        }
+
+        @keyframes aparecer {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+
+        @keyframes girar {
+            from { transform: rotate(0deg); }
+            to { transform: rotate(360deg); }
+        }
+
+        @keyframes crecer {
+            from { transform: scale(1); }
+            to { transform: scale(1.5); }
+        }
+    </style>
+
+    <h3>Ejemplo 1: Mover</h3>
+    <div style="background-color: lightblue; width: 100px; padding: 10px; animation: mover 2s infinite alternate;">Me muevo</div>
+
+    <h3>Ejemplo 2: Cambiar de color</h3>
+    <div style="background-color: red; width: 100px; padding: 10px; animation: cambiarColor 2s infinite alternate;">Cambio de color</div>
+
+    <h3>Ejemplo 3: Aparecer gradualmente</h3>
+    <p style="animation: aparecer 3s infinite alternate;">Aparesco y desaparesco.</p>
+
+    <h3>Ejemplo 4: Gira</h3>
+    <div style="background-color: lightgreen; width: 100px; padding: 10px; animation: girar 3s infinite linear;">Giro</div>
+
+    <h3>Ejemplo 5: Aumenta de tamaño</h3>
+    <div style="background-color: pink; width: 100px; padding: 10px; animation: crecer 2s infinite alternate;">Crezco</div>
+
+    <h2>3. Video </h2>
+    <p>Video explicando animaciones.</p>
+
+   <video width="320" height="240" controls>
+        <source src="videos/Flexbox.mp4"></video>
+</body>
+</html>
